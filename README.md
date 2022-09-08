@@ -1,2 +1,3 @@
-# java-concurrency-demo
-A set of various Java concurrency related demos
+# Java Concurrency Demos
+
+This repository contains a set of various Java related concurrency demos.
