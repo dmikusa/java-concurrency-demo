@@ -22,6 +22,7 @@
   <modules>
     <module>basic-threads</module>
     <module>synchronization</module>
+    <module>deadlock</module>
   </modules>
 
   <properties>
