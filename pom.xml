@@ -21,6 +21,7 @@
 
   <modules>
     <module>basic-threads</module>
+    <module>synchronization</module>
   </modules>
 
   <properties>

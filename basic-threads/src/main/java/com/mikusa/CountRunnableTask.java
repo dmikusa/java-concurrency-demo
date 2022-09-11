@@ -11,6 +11,7 @@ public class CountRunnableTask implements Runnable {
                 System.out.println("Sleeping for 10s");
                 Thread.sleep(10 * 1000);
             } catch (InterruptedException e) {
+                // If we remove this break, then the interrupt does nothing
                 break; // or return
             }
         }
