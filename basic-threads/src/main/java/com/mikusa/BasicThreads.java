@@ -2,7 +2,6 @@ package com.mikusa;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.time.LocalTime;
 import java.util.Optional;
 
 public class BasicThreads {
@@ -38,8 +37,14 @@ public class BasicThreads {
 
         if (t.isPresent()) {
             Thread.sleep(2 * 1000);
+
             System.out.println("Interrupting");
+            // We are requesting that the thread interrupt
             t.get().interrupt();
+
+            // Then waiting until the thread actually stops
+            // If it interrupts properly, that'll happen almost immediately
+            // If it does not interrupt properly, it'll wait the full 100s instead of 2s
             t.get().join();
             System.out.println("Done");
         }
@@ -85,6 +90,7 @@ public class BasicThreads {
                     System.out.println("Sleeping for 10s");
                     Thread.sleep(10 * 1000);
                 } catch (InterruptedException e) {
+                    // If we remove this break, then the interrupt does nothing
                     break; // or return
                 }
             }
