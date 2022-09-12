@@ -23,6 +23,7 @@
     <module>basic-threads</module>
     <module>synchronization</module>
     <module>deadlock</module>
+    <module>producer-consumer</module>
   </modules>
 
   <properties>
