@@ -24,6 +24,7 @@
     <module>synchronization</module>
     <module>deadlock</module>
     <module>producer-consumer</module>
+    <module>java-util-concurrent-basics</module>
   </modules>
 
   <properties>
